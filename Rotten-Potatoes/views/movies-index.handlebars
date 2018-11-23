@@ -1,0 +1,12 @@
+<div class="text-right">
+    <a href="/reviews/new" class="btn btn-primary">Write Review</a>
+</div>
+<h1>Now Playing</h1>
+{{#each movies}}
+<ul>
+    <li>{{this.title}}</li>
+    <a href="/movies/{{this.id}}">
+        <img class="img-responsive" src="https://image.tmdb.org/t/p/w154{{this.poster_path}}"/>
+    </a>
+</ul>
+{{/each}}
